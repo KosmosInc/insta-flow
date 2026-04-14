@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insta Flow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <div class="brand">Insta Flow</div>
+          <a class="top-link" href="#idea-box">Start typing</a>
+        </nav>
+
+        <div class="hero-copy">
+          <p class="eyebrow">Instagram Reels, without the blank-page panic</p>
+          <h1>Turn one rough thought into your next scroll-stopping Reel.</h1>
+          <p class="subcopy">
+            Capture hooks, scenes, and punchy concepts in one focused workspace
+            built for creators who move fast.
+          </p>
+        </div>
+
+        <section class="idea-panel" id="idea-box">
+          <div class="idea-heading">
+            <span class="badge">Idea Box</span>
+            <h2>Drop in your Reel idea</h2>
+            <p>
+              Write a messy thought, a hook, or a half-formed concept. We’ll
+              shape the page around momentum, not perfection.
+            </p>
+          </div>
+
+          <form class="idea-form" id="idea-form">
+            <label class="sr-only" for="idea-input">Instagram Reel idea</label>
+            <textarea
+              id="idea-input"
+              name="idea"
+              rows="8"
+              placeholder="Example: A fast reel showing 3 signs your content strategy is making growth harder than it needs to be..."
+            ></textarea>
+
+            <div class="form-actions">
+              <div class="button-row">
+                <button type="submit">Save idea</button>
+                <button type="button" class="secondary-button" id="generate-button">
+                  Generate plan
+                </button>
+                <button type="button" class="secondary-button" id="export-button">
+                  Export notes
+                </button>
+              </div>
+              <p id="save-status" aria-live="polite">Nothing saved yet.</p>
+            </div>
+          </form>
+        </section>
+      </header>
+
+      <main>
+        <section class="results-panel" id="results-panel" aria-live="polite">
+          <div class="results-header">
+            <p class="card-label">Reel Builder</p>
+            <h2>Your quick content plan</h2>
+            <p>
+              Use this as a first draft for scripting, filming, or turning one
+              idea into multiple Reel variations.
+            </p>
+          </div>
+
+          <div class="results-grid">
+            <article class="result-card">
+              <h3>Hook ideas</h3>
+              <ul id="hook-list" class="result-list">
+                <li>Type an idea, then generate a plan.</li>
+              </ul>
+            </article>
+
+            <article class="result-card">
+              <h3>Shot flow</h3>
+              <ul id="flow-list" class="result-list">
+                <li>Your scene-by-scene flow will appear here.</li>
+              </ul>
+            </article>
+
+            <article class="result-card">
+              <h3>Caption angle</h3>
+              <p id="caption-angle" class="result-copy">
+                Add your Reel topic to get a caption direction.
+              </p>
+            </article>
+
+            <article class="result-card">
+              <h3>Call to action</h3>
+              <p id="cta-angle" class="result-copy">
+                We’ll suggest a CTA that matches your idea.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="feature-grid">
+          <article class="feature-card">
+            <p class="card-label">Hooks</p>
+            <h3>Keep the opening sharp</h3>
+            <p>
+              Start with the line that earns the pause. Test bolder openings
+              before you ever hit record.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <p class="card-label">Scenes</p>
+            <h3>Map your flow quickly</h3>
+            <p>
+              Break ideas into short visual beats so every Reel feels paced,
+              intentional, and easy to shoot.
+            </p>
+          </article>
+
+          <article class="feature-card accent-card">
+            <p class="card-label">Momentum</p>
+            <h3>Collect ideas before they disappear</h3>
+            <p>
+              The page remembers your latest draft in the browser, so your next
+              Reel concept is waiting when inspiration comes back.
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
